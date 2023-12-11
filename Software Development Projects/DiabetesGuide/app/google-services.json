@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "983345218075",
+    "project_id": "diabetesguide-2837e",
+    "storage_bucket": "diabetesguide-2837e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983345218075:android:f4d8748bc434364268eebe",
+        "android_client_info": {
+          "package_name": "com.example.diabetesguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983345218075-u7o4e5ju1u06kst6qore0d60umn0f4ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs6OnkNRmSC1S2Dd1zzOqjHZqn9GNCCcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983345218075-u7o4e5ju1u06kst6qore0d60umn0f4ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

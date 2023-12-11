@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDoctor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/BookAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Book Appointment"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/DoctorPhoto"
+            android:layout_width="142dp"
+            android:layout_height="151dp"
+            android:layout_gravity="left"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <EditText
+            android:id="@+id/editTextDoctor"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="-125dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Doctors Name"
+            />
+
+        <TextView
+            android:id="@+id/textViewNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:hint="Notes"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/editTextDoctorNotes"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:layout_gravity="top"
+            android:ems="10"
+            android:hint="Enter notes for doctor "
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:minLines="6"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/buttonRequestDate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Request Date"
+            android:layout_gravity="left"
+            android:layout_marginVertical="50dp"
+            android:backgroundTint="@color/button_colour"
+            />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_gravity="right"
+            android:layout_marginTop="-100dp"
+            android:backgroundTint="@color/button_colour"
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

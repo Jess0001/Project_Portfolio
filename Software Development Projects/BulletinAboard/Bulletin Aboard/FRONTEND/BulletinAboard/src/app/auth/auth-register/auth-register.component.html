@@ -1,0 +1,43 @@
+<form (submit)="onregister(registrationform)" #registrationform="ngForm">
+    <head>
+        <title>Register</title>
+    </head>
+
+    <body>
+        <br><br><br><br>
+        <br><br><br><br>
+        <h1>Register a new account!</h1>
+        <br><br><br>
+
+        <h2>Create an account so we can login ASAP!</h2>
+        <br><br><br>
+
+        <p>Username &emsp;
+            <input type="text" ngModel name="enteredusername" placeholder="Username" required minlength="3"
+                pattern="^[a-zA-Z0-9\s_-]+$" size="20" #enteredusername="ngModel" />
+            <br><br>
+            First Name
+            <input type="text" ngModel name="enteredfirstname" placeholder="First Name" size="20" required maxlength="50"
+                pattern="^[a-zA-Z0-9\s_-]+$" #enteredfirstname="ngModel" />
+            <br><br>
+            Last Name
+            <input type="text" ngModel name="enteredsurname" placeholder="Last name" size="20" required maxlength="50"
+                pattern="^[a-zA-Z0-9\s_-]+$" #enteredsurname="ngModel" />
+            <br><br>
+            Password &emsp;
+            <input type="password" ngModel name="enteredpassword" placeholder="Password" required minlength="3"
+                pattern="^([a-zA-Z0-9@*#]{8,15})$" size="20" #enteredpassword="ngModel" />
+        </p>
+
+        <br><br>
+        <button name="submit-btn" (click)="onregister(registrationform)">Register</button>
+        <br><br>
+        <button name="cancel_btn" (click)="oncancel(registrationform)">Cancel</button>
+        <br><br>
+
+        <p>Have an account already? Why not login?<br>
+            <a routerLink="/login">Log into account</a>
+        </p>
+
+    </body>
+</form>

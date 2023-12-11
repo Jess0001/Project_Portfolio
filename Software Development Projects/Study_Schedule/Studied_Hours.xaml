@@ -1,0 +1,25 @@
+﻿<Window x:Class="Study_Planner.Studied_Hours"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Study_Planner"
+        mc:Ignorable="d"
+        Title="Studied_Hours" Height="450" Width="800">
+    <Grid x:Name="study_Query">
+        <Grid.Background>
+            <ImageBrush ImageSource="/background-study-cartoon4.jpg"/>
+        </Grid.Background>
+        <TextBlock x:Name="studyQuery" TextWrapping="Wrap" Margin="25,15,25,529" Width="750" FontFamily="Lucida Sans Typewriter" FontSize="72" Foreground="#FFFFFBFB" Height="190"/>
+        <Label Content="Hours studied:" HorizontalAlignment="Left" Margin="25,224,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White" Width="240" Height="55"/>
+        <TextBox x:Name="hoursStudied" HorizontalAlignment="Left" Margin="301,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="33" Height="55"/>
+        <Button x:Name="next5" Content="Next" HorizontalAlignment="Left" Margin="635,365,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="next5_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Date:" HorizontalAlignment="Left" Margin="25,306,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White"/>
+        <DatePicker x:Name="sDate" HorizontalAlignment="Left" Margin="145,318,0,0" VerticalAlignment="Top" SelectedDateFormat="Long" FontSize="20"/>
+
+    </Grid>
+</Window>

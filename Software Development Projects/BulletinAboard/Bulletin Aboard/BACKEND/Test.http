@@ -1,0 +1,46 @@
+//creating user
+POST https://localhost:7899/api/users/ HTTP/1.1
+Content-Type: application/json
+
+{
+	"username": "GuyWithWork",
+	"firstName": "Johnny",
+	"lastName": "Brave",
+	"password": "password"
+}
+###
+
+//logging in user
+POST https://localhost:7899/api/auth/ HTTP/1.1
+Content-Type: application/json
+
+{
+	"username": "GuyWithAUsername",
+	"password": "password"
+}
+###
+
+//creating post
+POST https://localhost:7899/api/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "6",
+	"departmentCode": "ACE100",
+    "subject": "Testing backend",
+    "description": "Success"
+}
+###
+
+//get all posts
+GET https://localhost:7899/api/posts HTTP/1.1
+###
+
+//get one post
+GET https://localhost:7899/api/posts/6364eda74b623ee22955f6e8 HTTP/1.1
+###
+
+//delete post
+//id(last bit) should be provided on the database
+DELETE https://localhost:7899/api/posts/6364eda74b623ee22955f6e8 HTTP/1.1 
+###

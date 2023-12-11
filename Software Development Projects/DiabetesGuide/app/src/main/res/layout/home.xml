@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtHome"
+        android:layout_width="413dp"
+        android:layout_height="84dp"
+        android:background="#4B278A"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-2dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_account"
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="89dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButtonStats"
+        android:layout_width="91dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/ic_stats_24"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="205dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAppointment"
+        android:layout_width="88dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/ic_appointment_24"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="415dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCalander"
+        android:layout_width="86dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/ic_calendar_24"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="415dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButtonReminder"
+        android:layout_width="97dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/ic_reminders_24"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="205dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTips"
+        android:layout_width="97dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/lightbulb"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="415dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMed"
+        android:layout_width="92dp"
+        android:layout_height="76dp"
+        app:srcCompat="@drawable/medication_img"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="205dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtStats"
+        android:layout_width="92dp"
+        android:layout_height="19dp"
+        android:text="View Stats"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="280dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageButtonStats,txtStats" />
+
+    <TextView
+        android:id="@+id/txtMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medication"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="281dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reminders"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="281dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtCalander"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Calander"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="490dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointment"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="489dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips and Tricks"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="491dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DD8265"
+        android:text="CREATE LOG"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="605dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

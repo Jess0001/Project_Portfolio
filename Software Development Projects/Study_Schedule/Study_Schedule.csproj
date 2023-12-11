@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="background-copy-space-texture-blue-concept-activity-student-study-learning.jpg" />
+    <None Remove="background-stacked-books-study.jpg" />
+    <None Remove="background-study-cartoon.jpg" />
+    <None Remove="background-study-cartoon4.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="background-copy-space-texture-blue-concept-activity-student-study-learning.jpg" />
+    <Resource Include="background-stacked-books-study.jpg" />
+    <Resource Include="background-study-cartoon.jpg" />
+    <Resource Include="background-study-cartoon4.jpg" />
+  </ItemGroup>
+
+</Project>

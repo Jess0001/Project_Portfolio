@@ -1,0 +1,39 @@
+<form (submit)="onlogin(loginform)" #loginform="ngForm">
+
+    <head>
+        <title>Login</title>
+    </head>
+
+    <body>
+        <br><br><br><br>
+        <br><br><br><br>
+        <h1>Log into your account!</h1>
+        <br><br><br>
+
+        <h2>The sooner we can log, the sooner we post!</h2>
+        <br><br><br>
+
+        <p>Username &emsp;
+            <input type="text" ngModel name="enteredusername" placeholder="Username" required minlength="3"
+                pattern="^[a-zA-Z0-9\s_-]+$" size="20" #enteredusername="ngModel" />
+        </p>
+        <div *ngIf="enteredusername.invalid && (enteredusername.dirty || enteredusername.touched)">Invalid Credentials!</div>
+        <br><br>
+        <p>Password &emsp;
+            <input type="password" ngModel name="enteredpassword" placeholder="Password" required minlength="3"
+                pattern="^([a-zA-Z0-9@*#]{8,15})$" size="20" #enteredpassword="ngModel" />
+        </p>
+        <div *ngIf="enteredpassword.invalid && (enteredpassword.dirty || enteredpassword.touched)">Invalid Credentials</div>
+
+        <br><br>
+        <button name="submit-btn" (click)="onlogin(loginform)">Login</button>
+        <br><br>
+        <button name="cancel_btn" (click)="oncancel(loginform)">Cancel</button>
+        <br><br>
+
+        <p>Don't have an account? Want to create one?<br>
+            <a routerLink="/register">Register account</a>
+        </p>
+
+    </body>
+</form>

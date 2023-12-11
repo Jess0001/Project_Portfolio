@@ -1,0 +1,9 @@
+<div *ngFor="let post of posts">
+    Post #
+    {{post.id}} <br>
+    {{post.departmentCode}} <br>
+    {{post.subject}} <br>
+    {{post.description}} <br>
+    <button (click)="ondelete(post._id)">Delete Post</button>
+    <button (click)="onfind(post._id)">Find Post</button>
+</div>

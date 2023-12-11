@@ -1,0 +1,35 @@
+<form (submit)="oncreatepost(postform)" #postform="ngForm">
+
+    <head>
+        Create Post
+    </head>
+
+    <body>
+        <br><br><br><br><br><br>
+        <h1>Let's create a post!</h1>
+        <br><br><br>
+
+        <p>ID ref <br>
+            <input type="text" ngModel name="idref" placeholder="Post ID" size="20" required minlength="1"
+                pattern="^[a-zA-Z0-9\s_-]+$" #idref="ngModel" />
+            <br><br>
+            Department Code <br>
+            <input type="text" ngModel name="enterdepartmentcode" placeholder="Department Code" size="20" required minlength="6"
+                pattern="^[a-zA-Z0-9\s_-]+$" #enterdepartmentcode="ngModel" />
+            <br><br>
+            Subject <br>
+            <input type="text" ngModel name="enteredsubject" placeholder="Title" size="20" required minlength="3"
+                pattern="^[a-zA-Z0-9\s_-]+$" #enteredsubject="ngModel" />
+            <br><br>
+            Description <br>
+            <input type="text" ngModel name="enterdescription" placeholder="Description" size="20" required minlength="3"
+                pattern="^[a-zA-Z0-9\s_-]+$" #enterdescription="ngModel" />
+        <br><br><br><br>
+        <button type="submit" name="submit-btn" (click)="oncreatepost(postform)">Create Post</button>
+            <br><br>
+            <button type="reset" name="cancel_btn" (click)="oncancel(postform)">Cancel</button>
+        <br><br>
+        </p>
+    </body>
+
+</form>

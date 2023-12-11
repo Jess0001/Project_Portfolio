@@ -1,0 +1,50 @@
+﻿<Window x:Class="Study_Planner.Weekly_Schedule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Study_Planner"
+        mc:Ignorable="d"
+        Title="Weekly_Schedule" Height="650" Width="1000">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background-study-cartoon.jpg"/>
+        </Grid.Background>
+        <Label Content="Self-Study Weekly Schedule" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" FontFamily="Lucida Sans Typewriter" Background="Black" Margin="0,16,0,0">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF685C5C" Offset="0.897"/>
+                    <GradientStop Color="White" Offset="0.11"/>
+                    <GradientStop Color="#FF5385B8" Offset="0.727"/>
+                    <GradientStop Color="#FFE0E01B" Offset="0.577"/>
+                    <GradientStop Color="#FFE6C9B2" Offset="0.397"/>
+                    <GradientStop Color="#FF342E28" Offset="0.23"/>
+                    <GradientStop Color="#FFD31C5F" Offset="0"/>
+                    <GradientStop Color="#FEC0E4AF" Offset="0.933"/>
+                    <GradientStop Color="#FED82121" Offset="0.85"/>
+                    <GradientStop Color="#FE12C997" Offset="1"/>
+                    <GradientStop Color="#FF531028" Offset="0.49"/>
+                    <GradientStop Color="#FEC92BC9" Offset="0.78"/>
+                    <GradientStop Color="#FF242B25" Offset="0.663"/>
+                    <GradientStop Color="#FFB9B9B9" Offset="0.297"/>
+                    <GradientStop Color="#FFB6B2B3" Offset="0.173"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Module" HorizontalAlignment="Left" Margin="147,227,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Weekly hours" HorizontalAlignment="Left" Margin="245,227,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Completed hours" HorizontalAlignment="Left" Margin="408,227,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Remaining hours" HorizontalAlignment="Left" Margin="662,227,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="startSemester" Content="Semester Start:" HorizontalAlignment="Left" Margin="147,126,0,0" VerticalAlignment="Top" FontSize="22" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Semester End:" HorizontalAlignment="Left" Margin="147,170,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold"/>
+        <TextBlock x:Name="semesterStart" HorizontalAlignment="Left" Margin="333,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="22" Width="200" Text="{Binding Path=DateTimeValue, StringFormat=dd-MM-yyyy}"/>
+        <TextBlock x:Name="endSemester" HorizontalAlignment="Left" Margin="333,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" Width="200" Text="{Binding Path=DateTimeValue, StringFormat=dd-MM-yyyy}"/>
+        <Button x:Name="exit" Content="Exit" HorizontalAlignment="Left" Margin="843,559,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="exit_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <ScrollViewer x:Name="schedule" Margin="147,274,119,272" FontSize="22" Foreground="White"/>
+
+    </Grid>
+</Window>

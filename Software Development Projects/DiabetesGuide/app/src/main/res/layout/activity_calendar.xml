@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Calendar">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:editable="false"
+        android:text="Calendar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/events_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No events currently available..." />
+
+            <ListView
+                android:id="@+id/reminders_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <CalendarView
+        android:id="@+id/testCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:minDate="01/01/2022"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:id="@+id/createNewEvent_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/button_colour"
+        android:shape="oval"
+        android:text="CREATE NEW"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.Material3.Button" />
+
+</LinearLayout>

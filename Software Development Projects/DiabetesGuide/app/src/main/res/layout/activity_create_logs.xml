@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_Logs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_heading"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREATE LOG"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lets keep track!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="523dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Time recorded"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtTime"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:hint="E.g. 16:30"
+            android:inputType="time"
+
+            android:minHeight="48dp"></EditText>
+
+        <TextView
+            android:id="@+id/txtBloodSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Blood Sugar (mg/dL)"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtBloodSugar"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:hint="E.g. 126"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"></EditText>
+
+        <TextView
+            android:id="@+id/txtBloodPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Blood Pressure (mmHg)"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtBloodPressure"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:hint="E.g. 120/80"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"></EditText>
+
+        <TextView
+            android:id="@+id/txtMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Medication"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtMedication"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:hint="E.g. Rapid-acting insulin"
+            android:inputType="text"
+            android:minHeight="48dp"></EditText>
+
+        <TextView
+            android:id="@+id/txtFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Food Types"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtFood"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:hint="E.g. orange, mince, green beans "
+            android:inputType="text"
+            android:minHeight="48dp"></EditText>
+
+        <TextView
+            android:id="@+id/txtActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Activity"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtActivity"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:hint="E.g. Running, swimming, working out"
+            android:inputType="text"
+            android:minHeight="48dp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btnCreateLog"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:text="CREATE LOG">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
